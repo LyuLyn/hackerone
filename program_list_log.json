@@ -1,0 +1,738 @@
+2020-01-22 12:54:59 [scrapy.extensions.telnet] INFO: Telnet Password: 8a11c846fdad509f
+2020-01-22 12:54:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2020-01-22 12:55:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "firefox", "acceptInsecureCerts": true, "moz:firefoxOptions": {"args": ["-headless"]}}}, "desiredCapabilities": {"browserName": "firefox", "acceptInsecureCerts": true, "marionette": true, "moz:firefoxOptions": {"args": ["-headless"]}}}
+2020-01-22 12:55:02 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:2623
+2020-01-22 12:55:04 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session HTTP/1.1" 200 728
+2020-01-22 12:55:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/timeouts {"pageLoad": 30000}
+2020-01-22 12:55:04 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/timeouts HTTP/1.1" 200 14
+2020-01-22 12:55:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'hackerone.middlewares.SeleniumDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-01-22 12:55:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-01-22 12:55:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-01-22 12:55:04 [scrapy.core.engine] INFO: Spider opened
+2020-01-22 12:55:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-01-22 12:55:04 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-01-22 12:55:04 [root] INFO: Now in the SeleniumDownloaderMidderware
+2020-01-22 12:55:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/url {"url": "https://hackerone.com/directory/programs/"}
+2020-01-22 12:55:09 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/url HTTP/1.1" 200 14
+2020-01-22 12:55:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/element {"using": "css selector", "value": "table.daisy-table"}
+2020-01-22 12:55:09 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/element HTTP/1.1" 404 295
+2020-01-22 12:55:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/element {"using": "css selector", "value": "table.daisy-table"}
+2020-01-22 12:55:10 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/element HTTP/1.1" 404 295
+2020-01-22 12:55:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/element {"using": "css selector", "value": "table.daisy-table"}
+2020-01-22 12:55:10 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/element HTTP/1.1" 200 88
+2020-01-22 12:55:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:11 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:11 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 54548
+2020-01-22 12:55:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:11 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:11 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 54548
+2020-01-22 12:55:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:11 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:11 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:14 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:14 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 88595
+2020-01-22 12:55:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:14 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:14 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 88595
+2020-01-22 12:55:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:14 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:17 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:17 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 124061
+2020-01-22 12:55:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:17 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:17 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 124061
+2020-01-22 12:55:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:17 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:20 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:20 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 161454
+2020-01-22 12:55:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:20 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:20 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 161465
+2020-01-22 12:55:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:20 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:20 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:23 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:23 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 197005
+2020-01-22 12:55:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:23 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:23 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 197016
+2020-01-22 12:55:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:23 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:26 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:26 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 232780
+2020-01-22 12:55:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:26 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:26 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 232802
+2020-01-22 12:55:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:27 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:30 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:30 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 265989
+2020-01-22 12:55:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:30 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:30 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 266000
+2020-01-22 12:55:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:30 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:33 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:33 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 300939
+2020-01-22 12:55:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:33 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:33 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 300939
+2020-01-22 12:55:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:33 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:33 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:36 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:36 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 333993
+2020-01-22 12:55:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:36 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:36 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 333993
+2020-01-22 12:55:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:36 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:36 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:39 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:39 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 369489
+2020-01-22 12:55:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:39 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:39 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 369489
+2020-01-22 12:55:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:39 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:39 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:42 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:42 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 406068
+2020-01-22 12:55:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:42 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:42 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 406079
+2020-01-22 12:55:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:42 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:45 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 406112
+2020-01-22 12:55:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:45 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 406112
+2020-01-22 12:55:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync {"script": "window.scrollTo(0,document.body.scrollHeight)", "args": []}
+2020-01-22 12:55:45 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "POST /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/execute/sync HTTP/1.1" 200 14
+2020-01-22 12:55:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:48 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:48 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 406112
+2020-01-22 12:55:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:48 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source {}
+2020-01-22 12:55:48 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "GET /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7/source HTTP/1.1" 200 406112
+2020-01-22 12:55:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:48 [root] INFO: TIME COST: 43.65860104560852 seconds
+2020-01-22 12:55:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hackerone.com/directory/programs/> (referer: None)
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'InvestNext', 'url': 'https://hackerone.com/investnext', 'managed': False, 'launch_date': '01 / 2020', 'reports_resolved': '2', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Nutanix', 'url': 'https://hackerone.com/nutanix', 'managed': True, 'launch_date': '01 / 2020', 'reports_resolved': '27', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Topcoder', 'url': 'https://hackerone.com/topcoder', 'managed': True, 'launch_date': '01 / 2020', 'reports_resolved': '1', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Coingaming', 'url': 'https://hackerone.com/coingaming', 'managed': True, 'launch_date': '01 / 2020', 'reports_resolved': '2', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Curve', 'url': 'https://hackerone.com/curve', 'managed': True, 'launch_date': '01 / 2020', 'reports_resolved': '-', 'bounties_min': '$150', 'bounties_avr': ['$200', '-', '$300']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'h1-415-ctf', 'url': 'https://hackerone.com/h1-415-ctf', 'managed': False, 'launch_date': '01 / 2020', 'reports_resolved': '0', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'LifeOmic', 'url': 'https://hackerone.com/lifeomic', 'managed': True, 'launch_date': '01 / 2020', 'reports_resolved': '45', 'bounties_min': '$200', 'bounties_avr': ['$750']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Kubernetes', 'url': 'https://hackerone.com/kubernetes', 'managed': True, 'launch_date': '01 / 2020', 'reports_resolved': '1', 'bounties_min': '$50', 'bounties_avr': ['$250', '-', '$500']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'DRIVE.NET, Inc.', 'url': 'https://hackerone.com/drive_net_inc', 'managed': False, 'launch_date': '01 / 2020', 'reports_resolved': '25', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Ping Identity', 'url': 'https://hackerone.com/pingidentity', 'managed': True, 'launch_date': '01 / 2020', 'reports_resolved': '27', 'bounties_min': '$125', 'bounties_avr': ['$300']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': '8x8', 'url': 'https://hackerone.com/8x8', 'managed': True, 'launch_date': '01 / 2020', 'reports_resolved': '72', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Palo Alto Software', 'url': 'https://hackerone.com/palo_alto_software', 'managed': False, 'launch_date': '12 / 2019', 'reports_resolved': '30', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'MTN Group', 'url': 'https://hackerone.com/mtn_group', 'managed': False, 'launch_date': '12 / 2019', 'reports_resolved': '118', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'DataStax', 'url': 'https://hackerone.com/datastax', 'managed': True, 'launch_date': '12 / 2019', 'reports_resolved': '31', 'bounties_min': '$100', 'bounties_avr': ['$250', '-', '$500']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'LendingHome', 'url': 'https://hackerone.com/lendinghome', 'managed': True, 'launch_date': '12 / 2019', 'reports_resolved': '2', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Zenly', 'url': 'https://hackerone.com/zenly', 'managed': False, 'launch_date': '12 / 2019', 'reports_resolved': '16', 'bounties_min': '$50', 'bounties_avr': ['$750']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Polymail, Inc.', 'url': 'https://hackerone.com/polymail_inc', 'managed': False, 'launch_date': '12 / 2019', 'reports_resolved': '14', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'NordVPN', 'url': 'https://hackerone.com/nordvpn', 'managed': False, 'launch_date': '12 / 2019', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'PUBG', 'url': 'https://hackerone.com/pubg', 'managed': True, 'launch_date': '12 / 2019', 'reports_resolved': '31', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Genasys Technologies', 'url': 'https://hackerone.com/genasys', 'managed': False, 'launch_date': '11 / 2019', 'reports_resolved': '6', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Streak', 'url': 'https://hackerone.com/streak_com', 'managed': False, 'launch_date': '11 / 2019', 'reports_resolved': '8', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'LINE', 'url': 'https://hackerone.com/line', 'managed': True, 'launch_date': '11 / 2019', 'reports_resolved': '40', 'bounties_min': '$0', 'bounties_avr': ['$500', '-', '$900']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Stripo Inc', 'url': 'https://hackerone.com/stripo', 'managed': False, 'launch_date': '11 / 2019', 'reports_resolved': '53', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Pillar Project Worldwide Limited', 'url': 'https://hackerone.com/pillarproject', 'managed': False, 'launch_date': '11 / 2019', 'reports_resolved': '32', 'bounties_min': '$50', 'bounties_avr': ['$250', '-', '$500']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Oasis Protocol Foundation', 'url': 'https://hackerone.com/oasis_protocol_foundation', 'managed': True, 'launch_date': '11 / 2019', 'reports_resolved': '2', 'bounties_min': '$50', 'bounties_avr': ['$100']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'FileZilla', 'url': 'https://hackerone.com/filezilla', 'managed': False, 'launch_date': '11 / 2019', 'reports_resolved': '10', 'bounties_min': '$250', 'bounties_avr': ['$364']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Natur.com GmbH', 'url': 'https://hackerone.com/natur_com_gmbh', 'managed': False, 'launch_date': '11 / 2019', 'reports_resolved': '6', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'MobiSystems Ltd.', 'url': 'https://hackerone.com/mobisystems_ltd', 'managed': False, 'launch_date': '11 / 2019', 'reports_resolved': '18', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Gmelius', 'url': 'https://hackerone.com/gmelius', 'managed': False, 'launch_date': '11 / 2019', 'reports_resolved': '14', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Logitech VDP', 'url': 'https://hackerone.com/logitech', 'managed': True, 'launch_date': '10 / 2019', 'reports_resolved': '102', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'lemlist', 'url': 'https://hackerone.com/lemlist', 'managed': False, 'launch_date': '10 / 2019', 'reports_resolved': '21', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'KeyBank', 'url': 'https://hackerone.com/keybank', 'managed': True, 'launch_date': '10 / 2019', 'reports_resolved': '16', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Prospect.io', 'url': 'https://hackerone.com/prospect_io_gjk6b', 'managed': False, 'launch_date': '10 / 2019', 'reports_resolved': '47', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Worklytics', 'url': 'https://hackerone.com/worklytics', 'managed': False, 'launch_date': '10 / 2019', 'reports_resolved': '8', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Allegro', 'url': 'https://hackerone.com/allegro', 'managed': True, 'launch_date': '10 / 2019', 'reports_resolved': '6', 'bounties_min': '$200', 'bounties_avr': ['$250']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Top Echelon Software', 'url': 'https://hackerone.com/top_echelon_software', 'managed': False, 'launch_date': '10 / 2019', 'reports_resolved': '46', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Coda', 'url': 'https://hackerone.com/coda_bbp', 'managed': True, 'launch_date': '10 / 2019', 'reports_resolved': '26', 'bounties_min': '$50', 'bounties_avr': ['$150', '-', '$200']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'AODocs', 'url': 'https://hackerone.com/aodocs', 'managed': False, 'launch_date': '10 / 2019', 'reports_resolved': '1', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'JNJ Mobile', 'url': 'https://hackerone.com/jnj_mobile', 'managed': False, 'launch_date': '10 / 2019', 'reports_resolved': '33', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'GovTech', 'url': 'https://hackerone.com/sg-vdp', 'managed': True, 'launch_date': '10 / 2019', 'reports_resolved': '111', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Railto LLC', 'url': 'https://hackerone.com/railto', 'managed': True, 'launch_date': '10 / 2019', 'reports_resolved': '2', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Mixin', 'url': 'https://hackerone.com/mixin', 'managed': True, 'launch_date': '09 / 2019', 'reports_resolved': '1', 'bounties_min': '$250', 'bounties_avr': ['$250']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'People Interactive', 'url': 'https://hackerone.com/people_interactive', 'managed': False, 'launch_date': '09 / 2019', 'reports_resolved': '25', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Razer', 'url': 'https://hackerone.com/razer', 'managed': True, 'launch_date': '09 / 2019', 'reports_resolved': '120', 'bounties_min': '$100', 'bounties_avr': ['$250', '-', '$375']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Mailtime Technology Inc.', 'url': 'https://hackerone.com/mailtime_technology_inc', 'managed': False, 'launch_date': '09 / 2019', 'reports_resolved': '2', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'pixiv', 'url': 'https://hackerone.com/pixiv', 'managed': True, 'launch_date': '09 / 2019', 'reports_resolved': '49', 'bounties_min': '$200', 'bounties_avr': ['$200']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Copper', 'url': 'https://hackerone.com/copper', 'managed': False, 'launch_date': '09 / 2019', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Amitree Inc', 'url': 'https://hackerone.com/amitree_inc', 'managed': False, 'launch_date': '08 / 2019', 'reports_resolved': '5', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Developer Data Protection Reward Program', 'url': 'https://hackerone.com/ddp_reward_program', 'managed': True, 'launch_date': '08 / 2019', 'reports_resolved': '28', 'bounties_min': '$100', 'bounties_avr': ['$200', '-', '$300']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Libra', 'url': 'https://hackerone.com/libra', 'managed': True, 'launch_date': '08 / 2019', 'reports_resolved': '1', 'bounties_min': '-', 'bounties_avr': ['$100']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'savedroid', 'url': 'https://hackerone.com/savedroid', 'managed': True, 'launch_date': '08 / 2019', 'reports_resolved': '20', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'NCSC UK ', 'url': 'https://hackerone.com/ncsc_uk', 'managed': False, 'launch_date': '08 / 2019', 'reports_resolved': '36', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'dfuse Platform Inc.', 'url': 'https://hackerone.com/dfuse', 'managed': False, 'launch_date': '08 / 2019', 'reports_resolved': '0', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'ForeScout Technologies', 'url': 'https://hackerone.com/forescout_technologies', 'managed': True, 'launch_date': '07 / 2019', 'reports_resolved': '5', 'bounties_min': '$250', 'bounties_avr': ['$250']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Maker Ecosystem Growth Holdings, Inc', 'url': 'https://hackerone.com/makerdao_bbp', 'managed': True, 'launch_date': '07 / 2019', 'reports_resolved': '8', 'bounties_min': '$100', 'bounties_avr': ['$250', '-', '$5k']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'AT&T', 'url': 'https://hackerone.com/att', 'managed': True, 'launch_date': '07 / 2019', 'reports_resolved': '1601', 'bounties_min': '$100', 'bounties_avr': ['$300']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Equifax', 'url': 'https://hackerone.com/equifax', 'managed': True, 'launch_date': '07 / 2019', 'reports_resolved': '49', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Refereum', 'url': 'https://hackerone.com/refereum', 'managed': True, 'launch_date': '07 / 2019', 'reports_resolved': '25', 'bounties_min': '$100', 'bounties_avr': ['$150']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Tlon Corp', 'url': 'https://hackerone.com/tlon', 'managed': True, 'launch_date': '07 / 2019', 'reports_resolved': '2', 'bounties_min': '$500', 'bounties_avr': ['$500']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Kartpay', 'url': 'https://hackerone.com/kartpay', 'managed': False, 'launch_date': '07 / 2019', 'reports_resolved': '93', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Upgrade', 'url': 'https://hackerone.com/upgrade', 'managed': True, 'launch_date': '06 / 2019', 'reports_resolved': '5', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Solidus', 'url': 'https://hackerone.com/solidus', 'managed': False, 'launch_date': '06 / 2019', 'reports_resolved': '5', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Shieldox Security LTD', 'url': 'https://hackerone.com/shieldox_security', 'managed': True, 'launch_date': '06 / 2019', 'reports_resolved': '8', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Trint Ltd', 'url': 'https://hackerone.com/trint', 'managed': True, 'launch_date': '05 / 2019', 'reports_resolved': '36', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Squid Cache (IBB)', 'url': 'https://hackerone.com/ibb-squid-cache', 'managed': True, 'launch_date': '05 / 2019', 'reports_resolved': '0', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'ecobee', 'url': 'https://hackerone.com/ecobee', 'managed': True, 'launch_date': '05 / 2019', 'reports_resolved': '14', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Notepad++', 'url': 'https://hackerone.com/notepad-plus-plus', 'managed': False, 'launch_date': '05 / 2019', 'reports_resolved': '29', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'DefectDojo', 'url': 'https://hackerone.com/defectdojo', 'managed': False, 'launch_date': '05 / 2019', 'reports_resolved': '1', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Chainlink', 'url': 'https://hackerone.com/chainlink', 'managed': False, 'launch_date': '05 / 2019', 'reports_resolved': '32', 'bounties_min': '$50', 'bounties_avr': ['$150', '-', '$250']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'phpBB', 'url': 'https://hackerone.com/phpbb', 'managed': False, 'launch_date': '04 / 2019', 'reports_resolved': '11', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Priceline', 'url': 'https://hackerone.com/priceline', 'managed': True, 'launch_date': '04 / 2019', 'reports_resolved': '471', 'bounties_min': '$100', 'bounties_avr': ['$250']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'curl', 'url': 'https://hackerone.com/curl', 'managed': False, 'launch_date': '04 / 2019', 'reports_resolved': '6', 'bounties_min': '$500', 'bounties_avr': ['$200']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'ZEIT', 'url': 'https://hackerone.com/zeit', 'managed': False, 'launch_date': '04 / 2019', 'reports_resolved': '46', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'TomTom', 'url': 'https://hackerone.com/tomtom', 'managed': True, 'launch_date': '04 / 2019', 'reports_resolved': '89', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Sweatco Ltd', 'url': 'https://hackerone.com/sweatco_ltd', 'managed': False, 'launch_date': '04 / 2019', 'reports_resolved': '7', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Livestream', 'url': 'https://hackerone.com/livestream', 'managed': True, 'launch_date': '04 / 2019', 'reports_resolved': '111', 'bounties_min': '$100', 'bounties_avr': ['$250', '-', '$374']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Xilinx', 'url': 'https://hackerone.com/xilinx', 'managed': True, 'launch_date': '04 / 2019', 'reports_resolved': '24', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Python Cryptographic Authority', 'url': 'https://hackerone.com/pyca', 'managed': False, 'launch_date': '04 / 2019', 'reports_resolved': '3', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Capital One', 'url': 'https://hackerone.com/capital-one', 'managed': True, 'launch_date': '04 / 2019', 'reports_resolved': '64', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Backblaze', 'url': 'https://hackerone.com/backblaze', 'managed': True, 'launch_date': '04 / 2019', 'reports_resolved': '115', 'bounties_min': '-', 'bounties_avr': ['$100', '-', '$150']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Smartsheet', 'url': 'https://hackerone.com/smartsheet', 'managed': True, 'launch_date': '04 / 2019', 'reports_resolved': '29', 'bounties_min': '$50', 'bounties_avr': ['$350']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Trustpilot', 'url': 'https://hackerone.com/trustpilot', 'managed': True, 'launch_date': '04 / 2019', 'reports_resolved': '85', 'bounties_min': '$50', 'bounties_avr': ['$150']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Lob', 'url': 'https://hackerone.com/lob', 'managed': True, 'launch_date': '03 / 2019', 'reports_resolved': '35', 'bounties_min': '$100', 'bounties_avr': ['$300', '-', '$500']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'UMA Project', 'url': 'https://hackerone.com/uma_project', 'managed': True, 'launch_date': '03 / 2019', 'reports_resolved': '0', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'InnoGames', 'url': 'https://hackerone.com/innogames', 'managed': True, 'launch_date': '03 / 2019', 'reports_resolved': '55', 'bounties_min': '$50', 'bounties_avr': ['$500']}
+2020-01-22 12:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Tube8', 'url': 'https://hackerone.com/tube8', 'managed': False, 'launch_date': '03 / 2019', 'reports_resolved': '-', 'bounties_min': '$50', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Starling Bank Limited', 'url': 'https://hackerone.com/starling_bank', 'managed': True, 'launch_date': '03 / 2019', 'reports_resolved': '20', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Credit Karma', 'url': 'https://hackerone.com/creditkarma', 'managed': True, 'launch_date': '03 / 2019', 'reports_resolved': '31', 'bounties_min': '$100', 'bounties_avr': ['$500', '-', '$700']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Central Security Project', 'url': 'https://hackerone.com/central-security-project', 'managed': False, 'launch_date': '03 / 2019', 'reports_resolved': '3', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Omise', 'url': 'https://hackerone.com/omise', 'managed': False, 'launch_date': '03 / 2019', 'reports_resolved': '86', 'bounties_min': '$100', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Postmates', 'url': 'https://hackerone.com/postmates', 'managed': True, 'launch_date': '02 / 2019', 'reports_resolved': '109', 'bounties_min': '$50', 'bounties_avr': ['$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Magento', 'url': 'https://hackerone.com/magento', 'managed': True, 'launch_date': '01 / 2019', 'reports_resolved': '896', 'bounties_min': '$100', 'bounties_avr': ['$195', '-', '$600']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Ford', 'url': 'https://hackerone.com/ford', 'managed': True, 'launch_date': '01 / 2019', 'reports_resolved': '1560', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Hyatt Hotels', 'url': 'https://hackerone.com/hyatt', 'managed': True, 'launch_date': '01 / 2019', 'reports_resolved': '196', 'bounties_min': '$0', 'bounties_avr': ['$600']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'CFP Time', 'url': 'https://hackerone.com/cfptime', 'managed': False, 'launch_date': '01 / 2019', 'reports_resolved': '11', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Grammarly', 'url': 'https://hackerone.com/grammarly', 'managed': True, 'launch_date': '12 / 2018', 'reports_resolved': '137', 'bounties_min': '$100', 'bounties_avr': ['$150', '-', '$200']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'RATELIMITED', 'url': 'https://hackerone.com/ratelimited', 'managed': False, 'launch_date': '12 / 2018', 'reports_resolved': '172', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Avito', 'url': 'https://hackerone.com/avito', 'managed': False, 'launch_date': '11 / 2018', 'reports_resolved': '65', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'FanDuel', 'url': 'https://hackerone.com/fanduel', 'managed': True, 'launch_date': '11 / 2018', 'reports_resolved': '-', 'bounties_min': '$100', 'bounties_avr': ['$300', '-', '$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': "Hanno's projects", 'url': 'https://hackerone.com/hannob', 'managed': False, 'launch_date': '11 / 2018', 'reports_resolved': '13', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Smule', 'url': 'https://hackerone.com/smule', 'managed': False, 'launch_date': '11 / 2018', 'reports_resolved': '50', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Flickr', 'url': 'https://hackerone.com/flickr', 'managed': True, 'launch_date': '11 / 2018', 'reports_resolved': '28', 'bounties_min': '$100', 'bounties_avr': ['$150', '-', '$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Casper', 'url': 'https://hackerone.com/casper', 'managed': True, 'launch_date': '10 / 2018', 'reports_resolved': '105', 'bounties_min': '$50', 'bounties_avr': ['$200', '-', '$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Vivy', 'url': 'https://hackerone.com/vivy', 'managed': True, 'launch_date': '10 / 2018', 'reports_resolved': '0', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Matomo', 'url': 'https://hackerone.com/matomo', 'managed': False, 'launch_date': '09 / 2018', 'reports_resolved': '97', 'bounties_min': '$333', 'bounties_avr': ['$242']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'ESLint', 'url': 'https://hackerone.com/eslint', 'managed': False, 'launch_date': '09 / 2018', 'reports_resolved': '4', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'OpenVPN', 'url': 'https://hackerone.com/ibb-openvpn', 'managed': False, 'launch_date': '09 / 2018', 'reports_resolved': '4', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'VeraCrypt', 'url': 'https://hackerone.com/ibb-veracrypt', 'managed': True, 'launch_date': '09 / 2018', 'reports_resolved': '0', 'bounties_min': '$500', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'PayPal', 'url': 'https://hackerone.com/paypal', 'managed': True, 'launch_date': '08 / 2018', 'reports_resolved': '623', 'bounties_min': '-', 'bounties_avr': ['$1k', '-', '$2k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Voatz', 'url': 'https://hackerone.com/voatz', 'managed': False, 'launch_date': '08 / 2018', 'reports_resolved': '6', 'bounties_min': '$50', 'bounties_avr': ['$100', '-', '$150']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'MariaDB', 'url': 'https://hackerone.com/mariadb', 'managed': False, 'launch_date': '07 / 2018', 'reports_resolved': '28', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Chaturbate', 'url': 'https://hackerone.com/chaturbate', 'managed': True, 'launch_date': '07 / 2018', 'reports_resolved': '167', 'bounties_min': '$100', 'bounties_avr': ['$150', '-', '$200']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'IBM', 'url': 'https://hackerone.com/ibm', 'managed': False, 'launch_date': '07 / 2018', 'reports_resolved': '1544', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Tron Foundation', 'url': 'https://hackerone.com/tronfoundation', 'managed': True, 'launch_date': '06 / 2018', 'reports_resolved': '16', 'bounties_min': '$100', 'bounties_avr': ['$1k', '-', '$3k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Augur', 'url': 'https://hackerone.com/augurproject', 'managed': False, 'launch_date': '06 / 2018', 'reports_resolved': '23', 'bounties_min': '$550', 'bounties_avr': ['$500', '-', '$550']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Internet Freedom (IBB)', 'url': 'https://hackerone.com/ibb-if', 'managed': True, 'launch_date': '06 / 2018', 'reports_resolved': '0', 'bounties_min': '$500', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'arkadiyt-projects', 'url': 'https://hackerone.com/arkadiyt-projects', 'managed': False, 'launch_date': '06 / 2018', 'reports_resolved': '0', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'MyEtherWallet', 'url': 'https://hackerone.com/myetherwallet', 'managed': True, 'launch_date': '06 / 2018', 'reports_resolved': '11', 'bounties_min': '$50', 'bounties_avr': ['$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Liberapay', 'url': 'https://hackerone.com/liberapay', 'managed': False, 'launch_date': '06 / 2018', 'reports_resolved': '9', 'bounties_min': '$50', 'bounties_avr': ['$50']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Block.one', 'url': 'https://hackerone.com/eosio', 'managed': True, 'launch_date': '05 / 2018', 'reports_resolved': '108', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Tendermint', 'url': 'https://hackerone.com/tendermint', 'managed': False, 'launch_date': '05 / 2018', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'DuckDuckGo', 'url': 'https://hackerone.com/duckduckgo', 'managed': True, 'launch_date': '05 / 2018', 'reports_resolved': '37', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Impinj', 'url': 'https://hackerone.com/impinj', 'managed': True, 'launch_date': '05 / 2018', 'reports_resolved': '15', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Crypto.com', 'url': 'https://hackerone.com/crypto', 'managed': False, 'launch_date': '04 / 2018', 'reports_resolved': '18', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Passit', 'url': 'https://hackerone.com/passit', 'managed': False, 'launch_date': '04 / 2018', 'reports_resolved': '23', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Loofah', 'url': 'https://hackerone.com/loofah', 'managed': False, 'launch_date': '03 / 2018', 'reports_resolved': '3', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Node.js', 'url': 'https://hackerone.com/nodejs', 'managed': True, 'launch_date': '03 / 2018', 'reports_resolved': '10', 'bounties_min': '$500', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Nokogiri', 'url': 'https://hackerone.com/nokogiri', 'managed': False, 'launch_date': '03 / 2018', 'reports_resolved': '4', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'MediaMarktSaturn', 'url': 'https://hackerone.com/mediamarktsaturn', 'managed': True, 'launch_date': '03 / 2018', 'reports_resolved': '101', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'MyCrypto', 'url': 'https://hackerone.com/mycrypto', 'managed': False, 'launch_date': '03 / 2018', 'reports_resolved': '31', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'JamieWeb', 'url': 'https://hackerone.com/jamieweb', 'managed': False, 'launch_date': '02 / 2018', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Nimiq', 'url': 'https://hackerone.com/nimiq', 'managed': True, 'launch_date': '02 / 2018', 'reports_resolved': '11', 'bounties_min': '$500', 'bounties_avr': ['$1k', '-', '$2k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Toyota', 'url': 'https://hackerone.com/toyota', 'managed': True, 'launch_date': '02 / 2018', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'RSK', 'url': 'https://hackerone.com/rsksmart', 'managed': True, 'launch_date': '02 / 2018', 'reports_resolved': '8', 'bounties_min': '$400', 'bounties_avr': ['$2k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'BitMEX', 'url': 'https://hackerone.com/bitmex', 'managed': True, 'launch_date': '02 / 2018', 'reports_resolved': '26', 'bounties_min': '$50', 'bounties_avr': ['$100', '-', '$150']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'passhash', 'url': 'https://hackerone.com/passhash', 'managed': False, 'launch_date': '01 / 2018', 'reports_resolved': '0', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Crowdstrike', 'url': 'https://hackerone.com/crowdstrike', 'managed': True, 'launch_date': '01 / 2018', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Coalition, Inc.', 'url': 'https://hackerone.com/coalition', 'managed': False, 'launch_date': '01 / 2018', 'reports_resolved': '11', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Goldman Sachs', 'url': 'https://hackerone.com/goldmansachs', 'managed': True, 'launch_date': '12 / 2017', 'reports_resolved': '37', 'bounties_min': '-', 'bounties_avr': ['$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Node.js third-party modules', 'url': 'https://hackerone.com/nodejs-ecosystem', 'managed': True, 'launch_date': '11 / 2017', 'reports_resolved': '208', 'bounties_min': '-', 'bounties_avr': ['$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Ed', 'url': 'https://hackerone.com/ed', 'managed': False, 'launch_date': '11 / 2017', 'reports_resolved': '11', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'RecargaPay', 'url': 'https://hackerone.com/recargapay', 'managed': True, 'launch_date': '10 / 2017', 'reports_resolved': '32', 'bounties_min': '$100', 'bounties_avr': ['$300', '-', '$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Valve', 'url': 'https://hackerone.com/valve', 'managed': True, 'launch_date': '10 / 2017', 'reports_resolved': '546', 'bounties_min': '$100', 'bounties_avr': ['$750']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Sony', 'url': 'https://hackerone.com/sony', 'managed': True, 'launch_date': '10 / 2017', 'reports_resolved': '882', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Data Processing (IBB)', 'url': 'https://hackerone.com/ibb-data', 'managed': True, 'launch_date': '09 / 2017', 'reports_resolved': '36', 'bounties_min': '$500', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'JohnBlackbourn', 'url': 'https://hackerone.com/johnblackbourn', 'managed': False, 'launch_date': '09 / 2017', 'reports_resolved': '0', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'TTS Bug Bounty', 'url': 'https://hackerone.com/tts', 'managed': True, 'launch_date': '08 / 2017', 'reports_resolved': '127', 'bounties_min': '$150', 'bounties_avr': ['$300']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Deliveroo', 'url': 'https://hackerone.com/deliveroo', 'managed': True, 'launch_date': '08 / 2017', 'reports_resolved': '99', 'bounties_min': '$150', 'bounties_avr': ['$400', '-', '$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Infogram', 'url': 'https://hackerone.com/infogram', 'managed': False, 'launch_date': '08 / 2017', 'reports_resolved': '260', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Hyperledger', 'url': 'https://hackerone.com/hyperledger', 'managed': False, 'launch_date': '08 / 2017', 'reports_resolved': '7', 'bounties_min': '$200', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Monero', 'url': 'https://hackerone.com/monero', 'managed': False, 'launch_date': '08 / 2017', 'reports_resolved': '32', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Vanilla', 'url': 'https://hackerone.com/vanilla', 'managed': False, 'launch_date': '07 / 2017', 'reports_resolved': '246', 'bounties_min': '$100', 'bounties_avr': ['$150']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Bitwarden', 'url': 'https://hackerone.com/bitwarden', 'managed': False, 'launch_date': '07 / 2017', 'reports_resolved': '22', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'delight.im', 'url': 'https://hackerone.com/delight_im', 'managed': False, 'launch_date': '07 / 2017', 'reports_resolved': '14', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Google Play Security Reward Program', 'url': 'https://hackerone.com/googleplay', 'managed': True, 'launch_date': '06 / 2017', 'reports_resolved': '439', 'bounties_min': '$0', 'bounties_avr': ['$3k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Upserve ', 'url': 'https://hackerone.com/upserve', 'managed': True, 'launch_date': '06 / 2017', 'reports_resolved': '90', 'bounties_min': '$250', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'WakaTime', 'url': 'https://hackerone.com/wakatime', 'managed': False, 'launch_date': '06 / 2017', 'reports_resolved': '196', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Redtube', 'url': 'https://hackerone.com/redtube', 'managed': False, 'launch_date': '06 / 2017', 'reports_resolved': '-', 'bounties_min': '$50', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Bumble', 'url': 'https://hackerone.com/bumble', 'managed': False, 'launch_date': '06 / 2017', 'reports_resolved': '15', 'bounties_min': '$130', 'bounties_avr': ['$140', '-', '$260']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Spotify', 'url': 'https://hackerone.com/spotify', 'managed': True, 'launch_date': '05 / 2017', 'reports_resolved': '490', 'bounties_min': '$250', 'bounties_avr': ['$300']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Cuvva', 'url': 'https://hackerone.com/cuvva', 'managed': False, 'launch_date': '05 / 2017', 'reports_resolved': '17', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Teradici', 'url': 'https://hackerone.com/teradici', 'managed': False, 'launch_date': '05 / 2017', 'reports_resolved': '17', 'bounties_min': '$0', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Stellar.org', 'url': 'https://hackerone.com/stellar', 'managed': False, 'launch_date': '05 / 2017', 'reports_resolved': '21', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Rocket.Chat', 'url': 'https://hackerone.com/rocket_chat', 'managed': False, 'launch_date': '04 / 2017', 'reports_resolved': '68', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Homebrew', 'url': 'https://hackerone.com/homebrew', 'managed': False, 'launch_date': '04 / 2017', 'reports_resolved': '15', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Weblate', 'url': 'https://hackerone.com/weblate', 'managed': False, 'launch_date': '04 / 2017', 'reports_resolved': '126', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Shipt', 'url': 'https://hackerone.com/shipt', 'managed': True, 'launch_date': '04 / 2017', 'reports_resolved': '101', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Intel Corporation', 'url': 'https://hackerone.com/intel', 'managed': False, 'launch_date': '03 / 2017', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Disclosure Assistance', 'url': 'https://hackerone.com/disclosure-assistance', 'managed': False, 'launch_date': '03 / 2017', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Lyst', 'url': 'https://hackerone.com/lyst', 'managed': True, 'launch_date': '01 / 2017', 'reports_resolved': '64', 'bounties_min': '$100', 'bounties_avr': ['$100', '-', '$150']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Alvosec', 'url': 'https://hackerone.com/alvosec', 'managed': False, 'launch_date': '01 / 2017', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Showmax', 'url': 'https://hackerone.com/showmax', 'managed': False, 'launch_date': '01 / 2017', 'reports_resolved': '129', 'bounties_min': '$100', 'bounties_avr': ['$196', '-', '$200']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'YouPorn', 'url': 'https://hackerone.com/youporn', 'managed': False, 'launch_date': '12 / 2016', 'reports_resolved': '-', 'bounties_min': '$50', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Discourse', 'url': 'https://hackerone.com/discourse', 'managed': True, 'launch_date': '12 / 2016', 'reports_resolved': '90', 'bounties_min': '$100', 'bounties_avr': ['$256']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Nintendo', 'url': 'https://hackerone.com/nintendo', 'managed': False, 'launch_date': '12 / 2016', 'reports_resolved': '57', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'U.S. Dept Of Defense', 'url': 'https://hackerone.com/deptofdefense', 'managed': False, 'launch_date': '11 / 2016', 'reports_resolved': '6779', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Plaid', 'url': 'https://hackerone.com/plaid', 'managed': True, 'launch_date': '11 / 2016', 'reports_resolved': '43', 'bounties_min': '$100', 'bounties_avr': ['$100', '-', '$150']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'SEMrush', 'url': 'https://hackerone.com/semrush', 'managed': False, 'launch_date': '11 / 2016', 'reports_resolved': '402', 'bounties_min': '$100', 'bounties_avr': ['$100', '-', '$150']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Quora', 'url': 'https://hackerone.com/quora', 'managed': False, 'launch_date': '11 / 2016', 'reports_resolved': '132', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Brave Software', 'url': 'https://hackerone.com/brave', 'managed': False, 'launch_date': '10 / 2016', 'reports_resolved': '127', 'bounties_min': '$50', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Quantopian', 'url': 'https://hackerone.com/quantopian', 'managed': True, 'launch_date': '09 / 2016', 'reports_resolved': '89', 'bounties_min': '$100', 'bounties_avr': ['$350', '-', '$550']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'PortSwigger Web Security', 'url': 'https://hackerone.com/portswigger', 'managed': False, 'launch_date': '09 / 2016', 'reports_resolved': '36', 'bounties_min': '$100', 'bounties_avr': ['$350']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'RubyGems', 'url': 'https://hackerone.com/rubygems', 'managed': True, 'launch_date': '09 / 2016', 'reports_resolved': '57', 'bounties_min': '$500', 'bounties_avr': ['$1k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Files.com', 'url': 'https://hackerone.com/files', 'managed': False, 'launch_date': '08 / 2016', 'reports_resolved': '163', 'bounties_min': '$100', 'bounties_avr': ['$150', '-', '$200']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'OWOX, Inc.', 'url': 'https://hackerone.com/owox', 'managed': False, 'launch_date': '08 / 2016', 'reports_resolved': '72', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Blockstack', 'url': 'https://hackerone.com/blockstack', 'managed': False, 'launch_date': '08 / 2016', 'reports_resolved': '21', 'bounties_min': '$25', 'bounties_avr': ['$75', '-', '$150']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'WordPress', 'url': 'https://hackerone.com/wordpress', 'managed': False, 'launch_date': '07 / 2016', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Aspen', 'url': 'https://hackerone.com/aspen', 'managed': False, 'launch_date': '07 / 2016', 'reports_resolved': '2', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'GoCD', 'url': 'https://hackerone.com/gocd', 'managed': False, 'launch_date': '06 / 2016', 'reports_resolved': '41', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'VHX', 'url': 'https://hackerone.com/vhx', 'managed': True, 'launch_date': '06 / 2016', 'reports_resolved': '143', 'bounties_min': '$100', 'bounties_avr': ['$100', '-', '$125']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Nextcloud', 'url': 'https://hackerone.com/nextcloud', 'managed': False, 'launch_date': '06 / 2016', 'reports_resolved': '174', 'bounties_min': '$50', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'ICQ', 'url': 'https://hackerone.com/icq', 'managed': False, 'launch_date': '06 / 2016', 'reports_resolved': '0', 'bounties_min': '$100', 'bounties_avr': ['$150']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'SecNews', 'url': 'https://hackerone.com/secnews', 'managed': False, 'launch_date': '06 / 2016', 'reports_resolved': '11', 'bounties_min': '$50', 'bounties_avr': ['$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Starbucks', 'url': 'https://hackerone.com/starbucks', 'managed': True, 'launch_date': '05 / 2016', 'reports_resolved': '843', 'bounties_min': '$100', 'bounties_avr': ['$250', '-', '$375']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Ruby', 'url': 'https://hackerone.com/ruby', 'managed': True, 'launch_date': '05 / 2016', 'reports_resolved': '28', 'bounties_min': '$500', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Rockstar Games', 'url': 'https://hackerone.com/rockstargames', 'managed': True, 'launch_date': '04 / 2016', 'reports_resolved': '-', 'bounties_min': '$150', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'GitHub', 'url': 'https://hackerone.com/github', 'managed': False, 'launch_date': '04 / 2016', 'reports_resolved': '492', 'bounties_min': '$617', 'bounties_avr': ['$555', '-', '$617']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Open-Xchange', 'url': 'https://hackerone.com/open_xchange', 'managed': False, 'launch_date': '03 / 2016', 'reports_resolved': '243', 'bounties_min': '$100', 'bounties_avr': ['$300']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'LocalTapiola', 'url': 'https://hackerone.com/localtapiola', 'managed': False, 'launch_date': '02 / 2016', 'reports_resolved': '244', 'bounties_min': '$50', 'bounties_avr': ['$100', '-', '$200']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'bitaccess', 'url': 'https://hackerone.com/bitaccess', 'managed': False, 'launch_date': '02 / 2016', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['$20', '-', '$50']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Paragon Initiative Enterprises', 'url': 'https://hackerone.com/paragonie', 'managed': False, 'launch_date': '01 / 2016', 'reports_resolved': '17', 'bounties_min': '$0', 'bounties_avr': ['$50']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Bime', 'url': 'https://hackerone.com/bime', 'managed': True, 'launch_date': '01 / 2016', 'reports_resolved': '63', 'bounties_min': '$50', 'bounties_avr': ['$50', '-', '$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Zomato', 'url': 'https://hackerone.com/zomato', 'managed': False, 'launch_date': '01 / 2016', 'reports_resolved': '796', 'bounties_min': '$50', 'bounties_avr': ['$200']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'New Relic', 'url': 'https://hackerone.com/newrelic', 'managed': False, 'launch_date': '01 / 2016', 'reports_resolved': '361', 'bounties_min': '$100', 'bounties_avr': ['$500', '-', '$750']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Unikrn', 'url': 'https://hackerone.com/unikrn', 'managed': False, 'launch_date': '01 / 2016', 'reports_resolved': '181', 'bounties_min': '$50', 'bounties_avr': ['$30', '-', '$50']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'General Motors', 'url': 'https://hackerone.com/gm', 'managed': False, 'launch_date': '01 / 2016', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Tor', 'url': 'https://hackerone.com/torproject', 'managed': True, 'launch_date': '12 / 2015', 'reports_resolved': '37', 'bounties_min': '$100', 'bounties_avr': ['$100', '-', '$200']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'GlobaLeaks', 'url': 'https://hackerone.com/globaleaks', 'managed': False, 'launch_date': '10 / 2015', 'reports_resolved': '9', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Binary.com', 'url': 'https://hackerone.com/binary', 'managed': False, 'launch_date': '10 / 2015', 'reports_resolved': '106', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'CodeIgniter', 'url': 'https://hackerone.com/codeigniter', 'managed': False, 'launch_date': '10 / 2015', 'reports_resolved': '16', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Maximum', 'url': 'https://hackerone.com/maximum', 'managed': False, 'launch_date': '09 / 2015', 'reports_resolved': '220', 'bounties_min': '-', 'bounties_avr': ['$25', '-', '$40']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Kaspersky', 'url': 'https://hackerone.com/kaspersky', 'managed': False, 'launch_date': '09 / 2015', 'reports_resolved': '178', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Algolia', 'url': 'https://hackerone.com/algolia', 'managed': False, 'launch_date': '08 / 2015', 'reports_resolved': '172', 'bounties_min': '$100', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'ownCloud', 'url': 'https://hackerone.com/owncloud', 'managed': False, 'launch_date': '08 / 2015', 'reports_resolved': '227', 'bounties_min': '$50', 'bounties_avr': ['$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Grab', 'url': 'https://hackerone.com/grab', 'managed': True, 'launch_date': '08 / 2015', 'reports_resolved': '380', 'bounties_min': '$50', 'bounties_avr': ['$200', '-', '$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'CERT/CC', 'url': 'https://hackerone.com/cert', 'managed': False, 'launch_date': '08 / 2015', 'reports_resolved': '34', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Keybase', 'url': 'https://hackerone.com/keybase', 'managed': False, 'launch_date': '07 / 2015', 'reports_resolved': '125', 'bounties_min': '$50', 'bounties_avr': ['$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Revive Adserver', 'url': 'https://hackerone.com/revive_adserver', 'managed': False, 'launch_date': '07 / 2015', 'reports_resolved': '29', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'ok.ru', 'url': 'https://hackerone.com/ok', 'managed': False, 'launch_date': '07 / 2015', 'reports_resolved': '267', 'bounties_min': '$50', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Badoo', 'url': 'https://hackerone.com/badoo', 'managed': False, 'launch_date': '06 / 2015', 'reports_resolved': '152', 'bounties_min': '$140', 'bounties_avr': ['$140', '-', '$200']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Pornhub', 'url': 'https://hackerone.com/pornhub', 'managed': False, 'launch_date': '06 / 2015', 'reports_resolved': '-', 'bounties_min': '$50', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Moneybird', 'url': 'https://hackerone.com/moneybird', 'managed': False, 'launch_date': '06 / 2015', 'reports_resolved': '113', 'bounties_min': '-', 'bounties_avr': ['$50']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Dashlane', 'url': 'https://hackerone.com/dashlane', 'managed': False, 'launch_date': '06 / 2015', 'reports_resolved': '173', 'bounties_min': '$100', 'bounties_avr': ['$100', '-', '$150']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Coursera', 'url': 'https://hackerone.com/coursera', 'managed': False, 'launch_date': '05 / 2015', 'reports_resolved': '123', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Robinhood', 'url': 'https://hackerone.com/robinhood', 'managed': False, 'launch_date': '05 / 2015', 'reports_resolved': '59', 'bounties_min': '$100', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'VK.com', 'url': 'https://hackerone.com/vkcom', 'managed': False, 'launch_date': '05 / 2015', 'reports_resolved': '685', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Zendesk', 'url': 'https://hackerone.com/zendesk', 'managed': True, 'launch_date': '04 / 2015', 'reports_resolved': '442', 'bounties_min': '$100', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Shopify', 'url': 'https://hackerone.com/shopify', 'managed': False, 'launch_date': '04 / 2015', 'reports_resolved': '732', 'bounties_min': '$500', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Mapbox', 'url': 'https://hackerone.com/mapbox', 'managed': True, 'launch_date': '03 / 2015', 'reports_resolved': '253', 'bounties_min': '$200', 'bounties_avr': ['$300', '-', '$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Airbnb', 'url': 'https://hackerone.com/airbnb', 'managed': True, 'launch_date': '02 / 2015', 'reports_resolved': '565', 'bounties_min': '-', 'bounties_avr': ['$500', '-', '$750']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Airtable', 'url': 'https://hackerone.com/airtable', 'managed': False, 'launch_date': '02 / 2015', 'reports_resolved': '166', 'bounties_min': '$50', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Adobe', 'url': 'https://hackerone.com/adobe', 'managed': True, 'launch_date': '02 / 2015', 'reports_resolved': '2029', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'FormAssembly', 'url': 'https://hackerone.com/formassembly', 'managed': False, 'launch_date': '02 / 2015', 'reports_resolved': '182', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Blockchain', 'url': 'https://hackerone.com/blockchain', 'managed': True, 'launch_date': '02 / 2015', 'reports_resolved': '58', 'bounties_min': '$50', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Ubiquiti Inc.', 'url': 'https://hackerone.com/ui', 'managed': True, 'launch_date': '01 / 2015', 'reports_resolved': '911', 'bounties_min': '$100', 'bounties_avr': ['$200', '-', '$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Snapchat', 'url': 'https://hackerone.com/snapchat', 'managed': False, 'launch_date': '01 / 2015', 'reports_resolved': '312', 'bounties_min': '$250', 'bounties_avr': ['$250']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Imgur', 'url': 'https://hackerone.com/imgur', 'managed': False, 'launch_date': '12 / 2014', 'reports_resolved': '171', 'bounties_min': '-', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Uber', 'url': 'https://hackerone.com/uber', 'managed': True, 'launch_date': '12 / 2014', 'reports_resolved': '1381', 'bounties_min': '$500', 'bounties_avr': ['$500', '-', '$750']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Instacart', 'url': 'https://hackerone.com/instacart', 'managed': True, 'launch_date': '12 / 2014', 'reports_resolved': '196', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Yelp', 'url': 'https://hackerone.com/yelp', 'managed': False, 'launch_date': '12 / 2014', 'reports_resolved': '256', 'bounties_min': '-', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Informatica', 'url': 'https://hackerone.com/informatica', 'managed': False, 'launch_date': '11 / 2014', 'reports_resolved': '357', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'QIWI', 'url': 'https://hackerone.com/qiwi', 'managed': False, 'launch_date': '11 / 2014', 'reports_resolved': '722', 'bounties_min': '$50', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Vimeo', 'url': 'https://hackerone.com/vimeo', 'managed': True, 'launch_date': '11 / 2014', 'reports_resolved': '606', 'bounties_min': '$100', 'bounties_avr': ['$250', '-', '$300']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'WordPoints', 'url': 'https://hackerone.com/wordpoints', 'managed': False, 'launch_date': '11 / 2014', 'reports_resolved': '7', 'bounties_min': '$50', 'bounties_avr': ['$25']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Dropbox', 'url': 'https://hackerone.com/dropbox', 'managed': True, 'launch_date': '10 / 2014', 'reports_resolved': '282', 'bounties_min': '$216', 'bounties_avr': ['$512']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Eobot', 'url': 'https://hackerone.com/eobotcom', 'managed': False, 'launch_date': '10 / 2014', 'reports_resolved': '45', 'bounties_min': '$10', 'bounties_avr': ['$12', '-', '$20']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'GlassWire', 'url': 'https://hackerone.com/glasswire', 'managed': False, 'launch_date': '08 / 2014', 'reports_resolved': '55', 'bounties_min': '$50', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Greenhouse.io', 'url': 'https://hackerone.com/greenhouse', 'managed': False, 'launch_date': '08 / 2014', 'reports_resolved': '122', 'bounties_min': '$100', 'bounties_avr': ['$100', '-', '$200']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'ExpressionEngine', 'url': 'https://hackerone.com/expressionengine', 'managed': False, 'launch_date': '07 / 2014', 'reports_resolved': '150', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'GitLab', 'url': 'https://hackerone.com/gitlab', 'managed': False, 'launch_date': '06 / 2014', 'reports_resolved': '492', 'bounties_min': '-', 'bounties_avr': ['$1k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Harvest', 'url': 'https://hackerone.com/harvest', 'managed': False, 'launch_date': '06 / 2014', 'reports_resolved': '211', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'WePay', 'url': 'https://hackerone.com/wepay', 'managed': False, 'launch_date': '06 / 2014', 'reports_resolved': '185', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Twitter', 'url': 'https://hackerone.com/twitter', 'managed': False, 'launch_date': '05 / 2014', 'reports_resolved': '1106', 'bounties_min': '$140', 'bounties_avr': ['$420', '-', '$560']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Urban Dictionary', 'url': 'https://hackerone.com/urbandictionary', 'managed': False, 'launch_date': '05 / 2014', 'reports_resolved': '87', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Ian Dunn', 'url': 'https://hackerone.com/iandunn-projects', 'managed': False, 'launch_date': '04 / 2014', 'reports_resolved': '15', 'bounties_min': '$0', 'bounties_avr': ['$50']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Cloudflare Vulnerability Disclosure', 'url': 'https://hackerone.com/cloudflare', 'managed': True, 'launch_date': '04 / 2014', 'reports_resolved': '152', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Mail.ru', 'url': 'https://hackerone.com/mailru', 'managed': False, 'launch_date': '04 / 2014', 'reports_resolved': '2989', 'bounties_min': '$100', 'bounties_avr': ['$200', '-', '$275']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Automattic', 'url': 'https://hackerone.com/automattic', 'managed': False, 'launch_date': '04 / 2014', 'reports_resolved': '-', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'IRCCloud', 'url': 'https://hackerone.com/irccloud', 'managed': False, 'launch_date': '04 / 2014', 'reports_resolved': '184', 'bounties_min': '$50', 'bounties_avr': ['$100']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Khan Academy', 'url': 'https://hackerone.com/khanacademy', 'managed': False, 'launch_date': '04 / 2014', 'reports_resolved': '148', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Coinbase', 'url': 'https://hackerone.com/coinbase', 'managed': False, 'launch_date': '03 / 2014', 'reports_resolved': '430', 'bounties_min': '$200', 'bounties_avr': ['$100', '-', '$200']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'concrete5', 'url': 'https://hackerone.com/concrete5', 'managed': False, 'launch_date': '03 / 2014', 'reports_resolved': '233', 'bounties_min': '-', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Slack', 'url': 'https://hackerone.com/slack', 'managed': False, 'launch_date': '03 / 2014', 'reports_resolved': '969', 'bounties_min': '$100', 'bounties_avr': ['-']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Verizon Media', 'url': 'https://hackerone.com/verizonmedia', 'managed': True, 'launch_date': '02 / 2014', 'reports_resolved': '5665', 'bounties_min': '$50', 'bounties_avr': ['$375', '-', '$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'The Internet', 'url': 'https://hackerone.com/internet', 'managed': True, 'launch_date': '12 / 2013', 'reports_resolved': '101', 'bounties_min': '$750', 'bounties_avr': ['$1k', '-', '$3k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Phabricator', 'url': 'https://hackerone.com/phabricator', 'managed': False, 'launch_date': '12 / 2013', 'reports_resolved': '47', 'bounties_min': '$300', 'bounties_avr': ['$300']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Ruby on Rails', 'url': 'https://hackerone.com/rails', 'managed': True, 'launch_date': '12 / 2013', 'reports_resolved': '27', 'bounties_min': '$500', 'bounties_avr': ['$1k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Python (IBB)', 'url': 'https://hackerone.com/ibb-python', 'managed': True, 'launch_date': '12 / 2013', 'reports_resolved': '66', 'bounties_min': '$500', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Django', 'url': 'https://hackerone.com/django', 'managed': False, 'launch_date': '12 / 2013', 'reports_resolved': '11', 'bounties_min': '$250', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Nginx (IBB)', 'url': 'https://hackerone.com/ibb-nginx', 'managed': True, 'launch_date': '12 / 2013', 'reports_resolved': '3', 'bounties_min': '$500', 'bounties_avr': ['$3k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'OpenSSL (IBB)', 'url': 'https://hackerone.com/ibb-openssl', 'managed': True, 'launch_date': '12 / 2013', 'reports_resolved': '38', 'bounties_min': '$500', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'PHP (IBB)', 'url': 'https://hackerone.com/ibb-php', 'managed': True, 'launch_date': '12 / 2013', 'reports_resolved': '251', 'bounties_min': '$500', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Perl (IBB)', 'url': 'https://hackerone.com/ibb-perl', 'managed': True, 'launch_date': '12 / 2013', 'reports_resolved': '15', 'bounties_min': '$1k', 'bounties_avr': ['$500', '-', '$1k']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'Apache httpd (IBB)', 'url': 'https://hackerone.com/ibb-apache', 'managed': True, 'launch_date': '12 / 2013', 'reports_resolved': '14', 'bounties_min': '$500', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hackerone.com/directory/programs/>
+{'name': 'HackerOne', 'url': 'https://hackerone.com/security', 'managed': True, 'launch_date': '11 / 2013', 'reports_resolved': '372', 'bounties_min': '$500', 'bounties_avr': ['$500']}
+2020-01-22 12:55:49 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-01-22 12:55:49 [scrapy.extensions.feedexport] INFO: Stored json feed (275 items) in: program_list.json
+2020-01-22 12:55:49 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:2623/session/11a47622-fcd7-43b3-b40f-40b2ea508ca7 {}
+2020-01-22 12:55:50 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2623 "DELETE /session/11a47622-fcd7-43b3-b40f-40b2ea508ca7 HTTP/1.1" 200 14
+2020-01-22 12:55:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2020-01-22 12:55:50 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 390976,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 44.517971,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 1, 22, 4, 55, 49, 468645),
+ 'item_scraped_count': 275,
+ 'log_count/DEBUG': 412,
+ 'log_count/INFO': 13,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 1, 22, 4, 55, 4, 950674)}
+2020-01-22 12:55:50 [scrapy.core.engine] INFO: Spider closed (finished)
