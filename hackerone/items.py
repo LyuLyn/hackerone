@@ -31,3 +31,8 @@ class HackerItem(scrapy.Item):
     performance = Field()
     credit = Field()
     thanks = Field()
+
+
+class ProgramTypeItem(scrapy.Item):
+    program_name = Field()
+    program_type = Field()

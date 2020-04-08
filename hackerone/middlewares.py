@@ -225,6 +225,18 @@ class SeleniumDownloaderMiddleware(object):
                     pass
                 self.html = spider.browser.page_source
                 spider.current_hacker_count += 1
+            elif request_type == "program_type":
+                # if reqest url is program
+                # you should parse it and get related thanked hackers
+                spider.browser.get(request.url)
+                wait.until(
+                    presence_of_element_located(
+                        (By.XPATH, "//div[@class='card']")))
+                time.sleep(0.5)
+
+                # obtain the program page source html
+                self.html = spider.browser.page_source
+                spider.current_program_count += 1
             else:
                 return None
         except TimeoutException:
