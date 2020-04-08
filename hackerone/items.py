@@ -35,4 +35,5 @@ class HackerItem(scrapy.Item):
 
 class ProgramTypeItem(scrapy.Item):
     program_name = Field()
+    program_url = Field()
     program_type = Field()

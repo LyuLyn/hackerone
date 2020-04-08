@@ -40,26 +40,35 @@ class ProgramInfoSpider(scrapy.Spider):
     def start_requests(self):
         with open(self.program_list_file, 'r') as f:
             self.programs = json.load(f)
-        self.program_urls = [program.get("url") for program in self.programs]
-        for program_url in self.program_urls:
+        self.programs_info = [[program.get("url"),
+                               program.get("name")]
+                              for program in self.programs]
+        for program_url, program_name in self.programs_info[0:10]:
             yield scrapy.Request(program_url,
-                                 meta={'url_type': 'program_type'},
+                                 meta={
+                                     'url_type': 'program_type',
+                                     'program_name': program_name
+                                 },
                                  callback=self.parse_program_type)
 
     # parse the program type
     def parse_program_type(self, response):
         # inspct response by invoking scrapy shell
         # inspect_response(response, self)
-
-        program_name = response.css("h1::text").get()
+        program_name = response.request.meta.get("program_name")
+        program_url = response.request.url
         program_type = -1
         program_info = response.css(
             "div.card div.better-profile-header__program-type strong::text"
         ).get()
-        if "Vulnerability Disclosure Program" in program_info:
-            program_type = 0
-        elif "Bug Bounty Program" in program_info:
-            program_type = 1
+        if program_info is not None:
+            if "Vulnerability Disclosure Program" in program_info:
+                program_type = 0
+            elif "Bug Bounty Program" in program_info:
+                program_type = 1
+        else:
+            program_type = -2
 
         yield ProgramTypeItem(program_name=program_name,
+                              program_url=program_url,
                               program_type=program_type)
