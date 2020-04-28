@@ -152,7 +152,7 @@ class SeleniumDownloaderMiddleware(object):
                     old_page = spider.browser.page_source
                     spider.browser.execute_script(
                         "window.scrollTo(0,document.body.scrollHeight)")
-                    time.sleep(3)
+                    time.sleep(10)
                     new_page = spider.browser.page_source
                 self.html = spider.browser.page_source
             elif request_type == "program":
@@ -169,16 +169,20 @@ class SeleniumDownloaderMiddleware(object):
                         By.XPATH,
                         "//div[@class='card__heading'][contains(.//text(),'Program Statistics')]"
                     )))
-                time.sleep(0.5)
+                time.sleep(5)
                 # obtain the program page source html
                 program_page_html = spider.browser.page_source
                 # jump to the top thanks url
                 spider.browser.find_element_by_xpath(
                     "//a[contains(.//text(), 'Thanks')]").click()
+
+                program_name = request.meta.get("program_name", "")
+
                 wait.until(
                     presence_of_element_located((
                         By.XPATH,
-                        "//div[@class='card__heading'][contains(.//text(),'Thanks')]"
+                        "//div[@class='card__heading'][contains(.//text(),'" +
+                        program_name + "')]"
                     )))
                 time.sleep(0.5)
                 # obtain the program thanks page source html

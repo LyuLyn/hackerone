@@ -20,7 +20,7 @@ class ProgramInfoSpider(scrapy.Spider):
         # received the request from the engine and return a response to it
         # without passing through downloader
         self.options = webdriver.FirefoxOptions()
-        self.options.headless = True
+        self.options.headless = False
         self.browser = webdriver.Firefox(options=self.options)
         self.browser.set_page_load_timeout(30)
 
@@ -40,10 +40,11 @@ class ProgramInfoSpider(scrapy.Spider):
     def start_requests(self):
         with open(self.program_list_file, 'r') as f:
             self.programs = json.load(f)
-        self.program_urls = [program.get("url") for program in self.programs]
-        for program_url in self.program_urls:
-            yield scrapy.Request(program_url,
-                                 meta={'url_type': 'program'},
+
+        for program in self.programs:
+            yield scrapy.Request(program.get("url"),
+                                 meta={'url_type': 'program', 
+                                 'program_name': program.get("name")},
                                  callback=self.parse_program_info)
 
     # parse the data about the program

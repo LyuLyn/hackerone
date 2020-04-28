@@ -25,7 +25,7 @@ class ProgramListSpider(scrapy.Spider):
         # received the request from the engine and return a response to it
         # without passing through downloader
         self.options = webdriver.FirefoxOptions()
-        self.options.headless = True
+        self.options.headless = False
         self.browser = webdriver.Firefox(options=self.options)
         self.browser.set_page_load_timeout(30)
 
